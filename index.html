@@ -4,9 +4,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Venkateshwar Reddy Darmanola</title>
     <link rel="stylesheet" type="text/css" href="./venkat_files/style.css">
+  
   </head>
   <body data-new-gr-c-s-check-loaded="14.1188.0" data-gr-ext-installed="" cz-shortcut-listen="true">
-
+    
     <!-- idea: have a javascript animated loss function converging in the header? :p -->
     <div id="dhead" class="container">
       <div class="row">
@@ -151,11 +152,13 @@
       
     </div>
 
+
     
 
     <br><br><br><br><br><br><br><br><br><br><br>
 
     <script type="text/javascript">
+      console.log("ABDDC");
       const rot13 = (message) => {
         const alpha = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLM';
         return message.replace(/[a-z]/gi, letter => alpha[alpha.indexOf(letter) + 13]);
@@ -169,6 +172,15 @@
         e_is_shown = !e_is_shown;
       })
     </script>
+  <div>
+      <script
+      type="module"
+      src="https://gradio.s3-us-west-2.amazonaws.com/4.26.0/gradio.js"
+    >
+      </script>
+  </div>
+<gradio-app src="https://frozenscar-facegen.hf.space"></gradio-app>
+
     
   </body>
   </html>
