@@ -8,6 +8,15 @@ body {
     color: #333;
 }
 
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
 /* Layout */
 .container {
     margin-left: auto;
@@ -252,4 +261,39 @@ hr {
 .nodot {
     list-style-type: none;
     padding-left: 0;
+}
+
+
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    font-size: 2em;
+    cursor: pointer;
+    
+}
+
+.cell:hover {
+    background-color: #f0f0f0;
+}
+
+h1{
+    
+	
+        text-align: center;
+    
+	
+   
 }
